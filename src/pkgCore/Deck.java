@@ -10,17 +10,6 @@ import pkgException.DeckException;
 public class Deck {
 
 	private ArrayList<Card> cardsInDeck = new ArrayList<Card>();
-	
-	public static void main(String[] args) {
-		Deck newDeck = new Deck();
-		try {
-			newDeck.Draw();
-		} catch (DeckException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.print(newDeck.getRemaining(eRank.ACE));
-	}
 
 	public Deck() {
 		for (eSuit eSuit : eSuit.values()) {
